@@ -10,7 +10,8 @@ public class calc {
 
 			System.out.print("1. ADD TWO Numbers\n");
 			System.out.print("2. SUBTRACT TWO Numbers\n");
-			System.out.print("3. Exit\n\n");
+			System.out.print("3. MULTIPLY TWO Numbers\n");
+			System.out.print("4. Exit\n\n");
 			System.out.print("Enter Your choice : ");
 			choice = scan.next().charAt(0);
 			switch(choice) {
@@ -28,8 +29,13 @@ public class calc {
 							res = a - b;
 							System.out.print("Result = "+res);
 							break;
-
-				case '3' : System.exit(0);
+				case '3' : System.out.print("Enter Two numbers : ");
+							a = scan.nextFloat();
+							b = scan.nextFloat();
+							res = a * b;
+							System.out.print("Result = "+res);
+							break;
+				case '4' : System.exit(0);
 							break;
 
 				default : System.out.print("INVALID CHOICE!!!");
